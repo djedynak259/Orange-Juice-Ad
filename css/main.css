@@ -43,6 +43,30 @@ nav ul {
  	text-transform: uppercase;
  }
 
+@media (max-width: 750px) {
+	nav {
+		height: auto;
+	}
+	nav a, .brand {
+		margin: 30px auto 0;
+		text-align: center;
+		width: 100%;
+	}
+	nav ul {
+		float: none;
+		margin: 30px auto 0;
+		text-align: center;
+		width: 90%;
+	}
+}
+
+@media (max-width: 515px) {
+	nav ul li{
+		width: 100%;
+		margin: 8px 0;
+	}
+}
+
  .searchWrapper {
  	height: 100px;
  }
@@ -113,6 +137,41 @@ nav ul {
 
 .contentWrapper button:last-child {
 	background-color: #7ACBC8;
+}
+
+@media (max-width: 920px) {
+	#content img {
+		height: 25vw;
+		/*margin-top: 8%; */
+		justify-content: center;
+	}
+	.contentWrapper button{
+		margin: 2%;
+	}
+	.contentWrapper {
+		width: 60%;
+	}
+}
+
+@media (max-width: 740px) {
+	.contentWrapper {
+		width: 90%;
+	}
+	#content img {
+		display: block;
+		margin: 0 auto;
+		height: 200px;
+	}
+	#content p {
+		margin-top: 5%;
+	}
+}
+
+@media (max-width: 505px) {
+	.contentWrapper button {
+		margin: 3% auto;
+		display: block;
+	}
 }
 
  footer {
